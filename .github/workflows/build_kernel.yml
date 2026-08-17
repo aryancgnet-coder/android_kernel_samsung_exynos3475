@@ -31,7 +31,7 @@ jobs:
           make clean
           make mrproper
           
-          make j2elte_defconfig
+          make lineage-j2lte_defconfig
           
           echo "CONFIG_ANDROID_BINDER_IPC=y" >> .config
           echo "CONFIG_BT_VHCI=y" >> .config
