@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Kernel Source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Build Dependencies
         run: |
@@ -43,7 +43,7 @@ jobs:
         shell: bash
 
       - name: Upload Compiled Kernel Image
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: galaxy-j2-kernel-zImage
           path: arch/arm/boot/zImage
